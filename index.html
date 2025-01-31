@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-[#FFF9F4] p-4 shadow-sm flex justify-between items-center"
+    >
+      <div class="md:flex md:justify-around md:items-center md:w-full">
+        <div class="flex items-center justify-start space-x-2">
+          <img class="w-12 h-12" src="/assets/logo-header.png" alt="" />
+          <p class="hidden md:block font-normal text-2xl">
+            Browse<span class="text-[#FFDC26]">4</span>Pets
+          </p>
+        </div>
+        <div>
+          <ul class="hidden md:flex gap-4">
+            <li><a href="#" class="text-gray-700">Find a pet</a></li>
+            <li><a href="#" class="text-gray-700">Breeds</a></li>
+            <li><a href="#" class="text-gray-700">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex items-center space-x-2">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="px-4 py-2 rounded-md border-2 border-yellow-500">
+            Login
+          </button>
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded-md">
+            Register
+          </button>
+        </div>
+      </div>
+      <button class="md:hidden text-2xl font-semibold text-gray-700">☰</button>
+    </header>
+
+    <section
+      class="text-center p-6 md:px-[140px] w-full h-[330px] md:max-h-[750px] bg-cover bg-center bg-no-repeat relative"
+      style="
+        background-image: url('/assets/cat-big.png');
+        background-size: cover;
+        background-position: center center;
+      "
+    >
+      <div class="absolute flex flex-col text-start md:top-[100px]">
+        <h2 class="text-xl w-1/2 md:w-full md:text-2xl font-bold">
+          Pamper Your Pet, Because They Deserve the Best
+        </h2>
+        <p class="text-sm w-2/3">
+          Discover a world of treats, toys, and essentials handpicked for your
+          furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button
+          class="mt-4 bg-yellow-500 w-[140px] text-white px-4 py-2 rounded-md"
+        >
+          Shop Now
+        </button>
+      </div>
+    </section>
+
+    <section class="p-6 md:pt-[140px] md:px-[140px]">
+      <h3 class="text-xl font-bold">Browse By Categories</h3>
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mt-4">
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/dog-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Dog</h4>
+          <p>3 item</p>
+        </div>
+
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/fish-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Fish</h4>
+          <p>3 item</p>
+        </div>
+
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/cat-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Cat</h4>
+          <p>3 item</p>
+        </div>
+
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/bird-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Birds</h4>
+          <p>3 item</p>
+        </div>
+
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/mouse-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Small pet</h4>
+          <p>3 item</p>
+        </div>
+
+        <div
+          class="bg-[#F9DF8A] flex flex-col justify-center items-center space-y-4 rounded-md p-4 shadow-md text-center"
+        >
+          <img
+            class="bg-white rounded-full p-3"
+            src="/assets/rabbit-cartoon.png"
+            alt="Dog Cartoon"
+          />
+          <h4>Rabit</h4>
+          <p>2 item</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFF9F4] md:p-[140px] px-[140px]">
+      <h3 class="text-xl font-bold">Trending Pet Products</h3>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <div class="bg-[#F9DF8A] p-4 shadow-md relative space-y-3">
+          <h4 class="text-lg font-semibold">T- Shirt For Dogs</h4>
+          <p class="w-1/2">
+            Discover a world of treats, toys, and essentials handpicked for
+          </p>
+          <button class="w-[166px] h-11 px-2 py-1 bg-white rounded-md">
+            Shop Now
+          </button>
+          <img
+            class="md:w-[244px] relative top-[-100px] left-44"
+            src="/assets/cute-pet-small.png"
+            alt="Dog"
+            class="w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (No Padding) -->
+    <footer class="bg-yellow-200 p-6 text-center">
+      <p>&copy; 2025 Sweet Pets. All rights reserved.</p>
+      <div class="flex justify-center gap-4 mt-2">
+        <a href="#" class="text-gray-700">Facebook</a>
+        <a href="#" class="text-gray-700">Twitter</a>
+        <a href="#" class="text-gray-700">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
